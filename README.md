@@ -12,7 +12,7 @@
 
 ## Getting Started
 
-To get a local copy up and running follow these simple example steps.
+-- To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 
@@ -20,7 +20,7 @@ To get a local copy up and running follow these simple example steps.
 
 ### Setup
 
-- Clone this repo locally using git in the command line and the following command
+-- Clone this repo locally using git in the command line and the following command
 
 ```bash
 > git clone git@github.com:Addisu87/TDD.git
@@ -34,7 +34,7 @@ To get a local copy up and running follow these simple example steps.
 ### Run tests
 
 ```bash
-  > rspec spec/file_name.rb
+  > rspec spec/solver_spec.rb
 ```
 
 ## Authors
