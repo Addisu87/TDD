@@ -31,5 +31,11 @@ describe Solver do
       buzz = Solver.new.fizzbuzz(num2)
       expect(buzz).to eql('buzz')
     end
+
+    it 'When num is divisible by 3 and 5, return "fizzbuzz"' do
+      num3 = 15
+      fizzbuzz = Solver.new.fizzbuzz(num3)
+      expect(fizzbuzz).to eql('fizzbuzz')
+    end
   end
 end
