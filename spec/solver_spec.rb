@@ -34,8 +34,14 @@ describe Solver do
 
     it 'When num is divisible by 3 and 5, return "fizzbuzz"' do
       num3 = 15
-      fizzbuzz = Solver.new.fizzbuzz(num3)
-      expect(fizzbuzz).to eql('fizzbuzz')
+      fizzbuzz_num = Solver.new.fizzbuzz(num3)
+      expect(fizzbuzz_num).to eql('fizzbuzz')
+    end
+    
+    it 'Any other case, return N as a string' do 
+      num4 = 7
+      any_integer = Solver.new.fizzbuzz(num4)
+      expect(any_integer).to eql('7')
     end
   end
 end
