@@ -9,6 +9,12 @@ class Solver
     end
   end
 
+  def fizzbuzz(num)
+    if num % 3
+     'fizz'
+    end
+
+  end
 
 
 end

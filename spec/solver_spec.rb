@@ -23,7 +23,13 @@ describe Solver do
     it 'When num is divisible by 3, return "fizz"' do
       num = 9
       fizz = Solver.new.fizzbuzz(num)
-      expect(fizz).to eq('fizz')
+      expect(fizz.to_i).to eq('fizz')
+    end
+
+    it 'When num is divisible by 5, return "buzz"' do
+      num2 = 25
+      buzz = Solver.new.fizzbuzz(num2)
+      expect(buzz.to_i).to eq('buzz')
     end
   end
 end
