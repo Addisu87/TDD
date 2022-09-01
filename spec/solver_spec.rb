@@ -18,7 +18,7 @@ describe Solver do
       expect { Solver.new.factorial(-7) }.to raise_error(StandardError)
     end
   end
-  
+
   describe 'When testing string reversal' do
     it 'when string argument hello is passed it returns olleh' do
       str = 'hello'
@@ -26,7 +26,6 @@ describe Solver do
       expect(reverse_str).to eql('olleh')
     end
   end
-
 
   describe 'When testing fizzbuzz' do
     it 'When num is divisible by 3 and 5, return "fizzbuzz"' do
