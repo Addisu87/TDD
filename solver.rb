@@ -10,10 +10,13 @@ class Solver
   end
 
   def fizzbuzz(num)
-    if num % 3
+    if (num % 3).zero?
      'fizz'
+    elsif (num % 5).zero?
+     'buzz'
+    else 
+      num.to_i
     end
-
   end
 
 
