@@ -4,11 +4,16 @@ describe Solver do
   describe 'Show testing factorial' do
     solver = Solver.new
 
-    describe 'Positive integers' do 
-      num = 5
+    it 'Factorial test for positive integers' do
+      num1 = 5
+      factorial_num = solver.factorial(num1)
+      expect(factorial_num).to eq(120)
+    end
 
-      expect().to eql 120
+    it 'Factorial test for zero' do
+      num2 = 0
+      factorial_zero = solver.factorial(num2)
+      expect(factorial_zero).to eq(1)
     end
   end
-
 end
