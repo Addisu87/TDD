@@ -19,10 +19,11 @@ describe Solver do
     end
   end
 
-  desctibe 'When testing fizzbuzz' do
-    it '' do
-      
+  describe 'When testing fizzbuzz' do
+    it 'When num is divisible by 3, return "fizz"' do
+      num = 9
+      fizz = Solver.new.fizzbuzz(num)
+      expect(fizz).to eq('fizz')
     end
-    
   end
 end
