@@ -9,8 +9,7 @@ class Solver
     end
   end
 
-  def fizzbuzz(nums)
-    (1..nums).map do |num|
+  def fizzbuzz(num)
       if (num % 3).zero? && (num % 5).zero?
         'fizzbuzz'
       elsif (num % 3).zero?
@@ -20,6 +19,5 @@ class Solver
       else
         num.to_s
       end
-    end
   end
 end

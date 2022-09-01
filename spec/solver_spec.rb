@@ -20,6 +20,12 @@ describe Solver do
   end
 
   describe 'When testing fizzbuzz' do
+    it 'When num is divisible by 3 and 5, return "fizzbuzz"' do
+      num3 = 15
+      fizzbuzz_num = Solver.new.fizzbuzz(num3)
+      expect(fizzbuzz_num).to eql('fizzbuzz')
+    end
+
     it 'When num is divisible by 3, return "fizz"' do
       num = 9
       fizz = Solver.new.fizzbuzz(num)
@@ -30,12 +36,6 @@ describe Solver do
       num2 = 25
       buzz = Solver.new.fizzbuzz(num2)
       expect(buzz).to eql('buzz')
-    end
-
-    it 'When num is divisible by 3 and 5, return "fizzbuzz"' do
-      num3 = 15
-      fizzbuzz_num = Solver.new.fizzbuzz(num3)
-      expect(fizzbuzz_num).to eql('fizzbuzz')
     end
 
     it 'Any other case, return N as a string' do
