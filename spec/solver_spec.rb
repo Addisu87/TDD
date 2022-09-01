@@ -1,8 +1,7 @@
-require_relative '../solver.rb'
+require_relative '../solver'
 
-describe Solver do 
+describe Solver do
   describe 'Show testing factorial' do
-
     it 'Factorial test for positive integers' do
       num1 = 5
       factorial_num = Solver.new.factorial(num1)
@@ -16,7 +15,14 @@ describe Solver do
     end
 
     it 'Factorial of negative numbers' do
-      expect {Solver.new.factorial(-7) }.to raise_error(StandardError)
+      expect { Solver.new.factorial(-7) }.to raise_error(StandardError)
     end
+  end
+
+  desctibe 'When testing fizzbuzz' do
+    it '' do
+      
+    end
+    
   end
 end
